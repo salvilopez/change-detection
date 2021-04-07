@@ -1,7 +1,6 @@
 <h2>Ejemplo NgZone</h2>
 <h3>Progreso: {{progreso}}%</h3>
 <h4 *ngIf="progreso>=100">
-  Proceso terminado {{texto}} de Angular Zone
+    Proceso terminado {{texto}} de Angular Zone
 </h4>
 <button (click)="procesarDentroAngularZone()">Incrementar DENTRO de ngZone</button>
-<button (click)="procesarFueraAngularZone()">Incrementar FUERA de ngZone</button>

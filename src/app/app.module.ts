@@ -10,6 +10,9 @@ import { AsyncPipeComponent } from './components/async-pipe/async-pipe.component
 import { DataList } from './providers/data/data-list.provider';
 import { RandomData } from './providers/data/random-data.provider';
 import { FormsModule } from '@angular/forms';
+import { UserFactorialComponent } from './components/user-factorial/user-factorial.component';
+import { PeticionAsyncComponent } from './components/peticion-async/peticion-async.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { FormsModule } from '@angular/forms';
     DetachComponent,
     OnPushComponent,
     RettachComponent,
-    AsyncPipeComponent
+    AsyncPipeComponent,
+    UserFactorialComponent,
+    PeticionAsyncComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     //Datos para los ejemplos

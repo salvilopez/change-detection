@@ -1,12 +1,10 @@
 <h2>ASYNC PIPE EJEMPLO</h2>
 <!--Otorga el valor futuro al elemento a partir del observable sobre el que se ejecuta
 Cada next() que se ejecuta nos envia un nuevo valor que el pipe gestiona una vez se complete-->
-<div *ngFor="let item of item$ | async">
-{{item}}
-</div>
+<p>{{listaNumeros}}</p>
+
 
 
 <p>
-  Este componente recibe un observable como input que va mandando nuevos valores y
-  este actualizara su vista con el ultimo valor enviado desde el padre a traves del observable
+    Este componente recibe un observable como input que va mandando nuevos valores y este actualizara su vista con el ultimo valor enviado desde el padre a traves del observable
 </p>
